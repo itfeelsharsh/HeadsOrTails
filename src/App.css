@@ -1,0 +1,48 @@
+/* App.css */
+/* Import Tailwind's base styles */
+@import 'tailwindcss/base';
+/* Import Tailwind's component styles */
+@import 'tailwindcss/components';
+/* Import Tailwind's utility styles */
+@import 'tailwindcss/utilities';
+/* Custom styles */
+.text-gradient {
+background: linear-gradient(45deg, #d53369, #daae51);
+-webkit-background-clip: text;
+color: transparent;
+font-weight: 800;
+}
+.shadow-xl {
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+.rounded-2xl {
+border-radius: 1.5rem;
+}
+.bg-gradient-to-r {
+background: linear-gradient(to right, var(--tw-gradient-stops));
+}
+/* Coin flip animation */
+@keyframes flip {
+0% {
+transform: rotateX(0);
+}
+50% {
+transform: rotateX(1800deg);
+}
+100% {
+transform: rotateX(3600deg);
+}
+}
+.flip {
+animation: flip 1s ease-in-out;
+}
+/* Blur and delay effects */
+.blur-md {
+filter: blur(6px);
+}
+.transition-opacity {
+transition: opacity 0.5s ease;
+}
+.transition-transform {
+transition: transform 0.5s ease;
+}
