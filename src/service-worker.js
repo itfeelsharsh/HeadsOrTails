@@ -1,4 +1,4 @@
-const CACHE_NAME = 'heads-or-tails-cache-v1';
+const CACHE_NAME = 'heads-or-tails';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -44,3 +44,8 @@ self.addEventListener('activate', (event) => {
     )
   );
 });
+
+import { precacheAndRoute } from 'workbox-precaching';
+
+// This is the placeholder Workbox will replace with the precache manifest during the build process.
+precacheAndRoute(self.__WB_MANIFEST);

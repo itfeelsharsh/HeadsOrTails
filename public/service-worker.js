@@ -44,3 +44,8 @@ self.addEventListener('activate', (event) => {
     )
   );
 });
+
+import { precacheAndRoute } from 'workbox-precaching';
+
+// This is the placeholder Workbox will replace with the precache manifest during the build process.
+precacheAndRoute(self.__WB_MANIFEST);
