@@ -8,6 +8,7 @@ const urlsToCache = [
   '/static/css/main.css', // CSS files
   '/static/js/bundle.js', // JS bundle
 ];
+/* eslint-disable no-restricted-globals */
 
 // Install the service worker and cache the necessary resources
 self.addEventListener('install', (event) => {
